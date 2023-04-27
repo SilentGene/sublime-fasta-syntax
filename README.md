@@ -18,20 +18,20 @@ If the syntax is not applied automatically accidentally, you can specify the syn
 - click menu -> View -> Syntax -> FastA
 - click 'plain text' in the bottom right -> FastA
 
-[change syntax](./sample_pics/sample_change_syntax.gif)
+![change syntax](./sample_pics/sample_change_syntax.gif)
 
 ## Note
 This is a `Syntax` file, not a `Theme` or a `Color Scheme`. The color of the key words is specified according to the `Color Scheme` which you can select by `menu -> Preferences -> Select Color Scheme...`
 
-[change color scheme](./sample_pics/sample_change_color_scheme.gif)
+![change color scheme](./sample_pics/sample_change_color_scheme.gif)
 
 ## Samples
 A few example of this syntax working with severl built-in color schemes:
 1. Monokai
-[Monokai](./sample_pics/Monokai.jpg)
+![Monokai](./sample_pics/Monokai.jpg)
 2. Sixteen
-[Sixteen](./sample_pics/Sixteen.jpg)
+![Sixteen](./sample_pics/Sixteen.jpg)
 3. Mariana
-[Mariana](./sample_pics/Mariana.jpg)
+![Mariana](./sample_pics/Mariana.jpg)
 4. Celeste
-[Celeste](./sample_pics/Celeste.jpg)
+![Celeste](./sample_pics/Celeste.jpg)
