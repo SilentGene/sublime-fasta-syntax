@@ -1,0 +1,48 @@
+%YAML 1.2
+---
+name: FastA
+file_extensions:
+  - fa
+  - fasta
+  - fna
+  - faa
+scope: source.fasta
+first_line_match: ^>.*
+contexts:
+  main:
+    - match: '^>'
+      scope: keyword.operator.header
+      push: seqid
+    - match: '\*$'
+      scope: comment.terminal
+    - match: '.'
+      scope: text.sequence
+
+  seqid:
+    - match: '\n'
+      scope: meta.separator.fasta
+      pop: true
+    - match: '[ \t]'
+      scope: meta.separator.fasta
+      set: description
+    - match: '.'
+      scope: entity.name.seqid
+  
+  description:
+    - match: '\n'
+      scope: meta.separator.fasta
+      pop: true
+    - match: '='
+      scope: keyword.operator.assignment
+    - match: '\['
+      scope: keyword.declaration.variable.taxa
+      set: taxa
+    - match: '.'
+      scope: string.desc
+
+  taxa:
+    - match: '\]'
+      scope: keyword.declaration.variable.taxa
+      pop: true
+    - match: '.'
+      scope: keyword.declaration.variable.taxa
