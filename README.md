@@ -12,11 +12,11 @@ Download the `fasta.sublime-syntax` and put it in the Sublime Text user folder:
 - Linux: ~/.config/sublime-text/Packages/User
 
 ### Applying syntax
-The application should recognize file in extention `fa`, `fasta`, `faa`, or `fna` automatically.
+The application should recognize files in extention `fa`, `fasta`, `faa`, or `fna` automatically.
 
 If the syntax is not applied automatically accidentally, you can specify the syntax by either:
 - click menu -> View -> Syntax -> FastA
-- click 'plain text' in the bottom right -> FastA
+- click 'plain text' at the bottom right -> FastA
 
 ![change syntax](./sample_pics/sample_change_syntax.gif)
 
@@ -26,7 +26,7 @@ This is a `Syntax` file, not a `Theme` or a `Color Scheme`. The color of the key
 ![change color scheme](./sample_pics/sample_change_color_scheme.gif)
 
 ## Samples
-A few example of this syntax working with severl built-in color schemes:
+A few examples of this syntax working with severl built-in color schemes:
 1. Monokai
 ![Monokai](./sample_pics/Monokai.jpg)
 2. Sixteen
