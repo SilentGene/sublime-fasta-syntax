@@ -1,5 +1,7 @@
 # sublime-fasta-syntax
-Let Sublime Text know better of FastA format.
+Let Sublime Text know better of [FastA format](https://www.ncbi.nlm.nih.gov/genbank/fastaformat/).
+
+`FastA` format is a commonly used text-based format for representing biological sequence data, such as DNA or protein sequences. It consists of a single-line sequence header, which begins with a `>` character, followed by one or more lines of sequence data. The header typically contains information about the sequence, such as its name or source organism. FastA format is widely supported by bioinformatics software and databases, and is often used for tasks such as sequence alignment and database searching.
 
 ## Installation
 
