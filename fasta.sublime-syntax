@@ -6,17 +6,19 @@ file_extensions:
   - fasta
   - fna
   - faa
+  - fas
+  - ffn
 scope: source.fasta
 first_line_match: ^>.*
 contexts:
   main:
     - match: '^>'
-      scope: keyword.operator.header
+      scope: keyword.operator.header.fasta
       push: seqid
     - match: '\*$'
-      scope: comment.terminal
+      scope: comment.terminal.fasta
     - match: '.'
-      scope: text.sequence
+      scope: text.sequence.fasta
 
   seqid:
     - match: '\n'
@@ -26,23 +28,23 @@ contexts:
       scope: meta.separator.fasta
       set: description
     - match: '.'
-      scope: entity.name.seqid
+      scope: entity.name.seqid.fasta
   
   description:
     - match: '\n'
       scope: meta.separator.fasta
       pop: true
     - match: '='
-      scope: keyword.operator.assignment
+      scope: keyword.operator.assignment.fasta
     - match: '\['
-      scope: keyword.declaration.variable.taxa
+      scope: keyword.declaration.variable.taxa.fasta
       set: taxa
     - match: '.'
-      scope: string.desc
+      scope: string.desc.fasta
 
   taxa:
     - match: '\]'
-      scope: keyword.declaration.variable.taxa
+      scope: keyword.declaration.variable.taxa.fasta
       pop: true
     - match: '.'
-      scope: keyword.declaration.variable.taxa
+      scope: keyword.declaration.variable.taxa.fasta
